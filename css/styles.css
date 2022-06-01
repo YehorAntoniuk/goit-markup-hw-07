@@ -212,7 +212,7 @@ ul {
 
 /* секция герой */
 
-.hero-section {
+.hero {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -228,7 +228,7 @@ ul {
     background-position: center;
 }
 
-.hero-title {
+.hero__title {
     margin: 0 auto 30px auto;
 
     font-weight: 900;
@@ -242,7 +242,7 @@ ul {
     color: var(--wigte-cl);
 }
 
-.hero-btn {
+.hero__btn {
     padding: 10px 32px;
     border-radius: 4px;
     border: none;
@@ -258,8 +258,8 @@ ul {
     transition: background-color var(--anim);
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
     background-color: var(--btn-hover-cl);
 }
 
@@ -349,7 +349,7 @@ ul {
     align-items: start;
 } */
 
-.modal-group {
+.modal-form__group {
     text-align: left;
 }
 
@@ -367,26 +367,26 @@ ul {
     padding: 40px;
 }
 
-.modal-label {
+.modal-form__label {
     /* position: relative; */
     margin-bottom: 10px;
 }
 
 .modal-text, 
-.modal-label,
-.modal-label-comment,
-.label-textarea,
-.label-checkbox,
-.label-text {
+.modal-form__label,
+.modal-form__label-comment,
+.modal-form__textarea,
+.modal-form__checkbox,
+.modal-form__text {
     display: block;
 }
 
-.input-label,
-.label-textarea {
+.modal-form__input,
+.modal-form__textarea {
     width: 100%;
 }
 
-.label-text {
+.modal-form__text {
     margin-bottom: 4px;
 
     font-weight: 400;
@@ -396,12 +396,12 @@ ul {
     letter-spacing: 0.01em;
 }
 
-.input-box {
+.modal-form__input-box {
     position: relative;
     width: 100%;
 }
 
-.label-icon {
+.modal-form__icon {
     position: absolute;
     top: 50%;
     left: 12px;
@@ -411,7 +411,7 @@ ul {
     transition: fill var(--anim);
 }
 
-.input-label {
+.modal-form__input {
     padding: 12px;
     padding-left: 42px;
     
@@ -422,26 +422,26 @@ ul {
     border-radius: 4px;
 }
 
-.input-label:hover,
-.input-label:focus {
+.modal-form__input:hover,
+.modal-form__input:focus {
     border: 1px solid var(--accent-cl);
 }
 
-.label-icon:hover,
-.label-icon:focus {
+.modal-form__icon:hover,
+.modal-form__icon:focus {
     fill: var(--accent-cl);
 }
 
-.input-label:hover + .label-icon,
-.input-label:focus + .label-icon {
+.modal-form__input:hover + .modal-form__icon,
+.modal-form__input:focus + .modal-form__icon {
     fill: var(--accent-cl);
 }
 
-.modal-label-comment {
+.modal-form__label-comment {
     margin-bottom: 20px;
 }
 
-.label-textarea {
+.modal-form__textarea {
     resize: none;
     height: 120px;
     padding: 12px 16px;
@@ -459,13 +459,13 @@ ul {
     transition: border var(--anim);
 }
 
-.label-textarea:focus,
-.label-textarea:hover {
+.modal-form__textarea:focus,
+.modal-form__textarea:hover {
     border: 1px solid var(--accent-cl);
     transition: border var(--anim);
 }
 
-.label-checkbox {
+.modal-form__checkbox {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -489,8 +489,8 @@ ul {
     transition: background-color var(--anim);
 }
 
-.label-checkbox:focus,
-.label-checkbox:hover {
+.modal-form__checkbox:focus,
+.modal-form__checkbox:hover {
     border-color: var(--accent-cl)
 }
 
@@ -504,17 +504,17 @@ ul {
     border-color: var(--accent-cl);
 }
 
-.checked-icon {
+.modal-form__checked-icon {
     opacity: 0;
 
     transition: opacity var(--anim);
 }
 
-.checkbox:checked + .checked .checked-icon {
+.checkbox:checked + .checked .modal-form__checked-icon {
     opacity: 1;
 }
 
-.policy-link {
+.modal-form__link {
     color: var(--accent-cl);
     text-decoration: underline;
 }
@@ -648,12 +648,12 @@ ul {
 }
 
 /* ссекция наша команда */
-.team-list {
+.team__list {
     display: flex;
     text-align: center;
 }
 
-.team-item {
+.team__item {
     box-shadow: var(--box-shadow); 
     border-radius: 0px 0px 4px 4px;
     margin-right: 30px;
@@ -661,7 +661,7 @@ ul {
     background-color: var(--wigte-cl);
 }
 
-.team-item:last-child {
+.team__item:last-child {
     margin-right: 0;
 }
 
@@ -669,7 +669,7 @@ ul {
     background-color: var(--secondary-bg-cl);
 }
 
-.team-card {
+.team__card {
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -685,7 +685,7 @@ ul {
     color: var(--secondary-cl);
 }
 
-.team-subtitle {
+.team__subtitle {
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -697,7 +697,7 @@ ul {
     color: var(--secondary-cl);
 }
 
-.team-text {
+.team__text {
     margin-bottom: 16px;
 
     font-size: 16px;
@@ -709,16 +709,16 @@ ul {
     color: var(--main-txt-cl);
 }
 
-.socials-list {
+.team__socials-list {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.socials-item:not(:last-child) {
+.team__socials-item:not(:last-child) {
     margin-right: 10px;
 }
 
-.socials-link {
+.team__socials-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -733,22 +733,22 @@ ul {
     transition: background-color var(--anim), color var(--anim);
 }
 
-.socials-link:hover,
-.socials-link:focus {
+.team__socials-link:hover,
+.team__socials-link:focus {
     background-color: var(--accent-cl);
     color: var(--wigte-cl);
 }
 
-.socials-icon {
+.team__socials-icon {
     fill: currentColor;
 }
 
-/* .socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon {
+/* .team__socials-link:hover .team__socials-icon,
+.team__socials-link:focus .team__socials-icon {
     fill: var(--wigte-cl);
 }
 
-.socials-icon {
+.team__socials-icon {
     fill: var(--icon-cl);
 } */
 
