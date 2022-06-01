@@ -111,7 +111,7 @@ ul {
     text-decoration: none;
 }
 
-.heaader-logo {
+.header-logo {
     margin-right: 95px;
 }
 
@@ -545,22 +545,22 @@ ul {
 .benefits {
     padding-bottom: 0;
 }
-.benefits-list {
+.benefits__list {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.benefits-item {
+.benefits__item {
     width: 270px;
     margin-right: 30px;
 }
 
-.benefits-item:last-child {
+.benefits__item:last-child {
     margin-right: 0;
 }
 
-.benefits-title {
+.benefits__title {
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -572,7 +572,7 @@ ul {
     color: var(--secondary-cl);
 }
 
-.benefits-text {
+.benefits__text {
     font-size: 14px;
     line-height: 1.71;
     
@@ -581,7 +581,7 @@ ul {
     color: var(--main-txt-cl);
 }
 
-.benefits-icon {
+.benefits__icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -593,7 +593,7 @@ ul {
 }
 
 /* секция чем занимаемся */
-.work-list {
+.work__list {
     display: flex;
     align-items: center;
 
@@ -601,16 +601,16 @@ ul {
     margin: 0;
 }
 
-.work-item {
+.work__item {
     position: relative;
     margin-right: 30px;
 }
 
-.work-item:last-child {
+.work__item:last-child {
     margin-right: 0;
 }
 
-.work-title {
+.work__title {
     margin-bottom: 50px;
 
     font-weight: 700;
@@ -622,7 +622,7 @@ ul {
     color: var(--secondary-cl);
 }
 
-.work-lable {
+.work__lable {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -632,7 +632,7 @@ ul {
     background: rgba(47, 48, 58, 0.8);
 }
 
-.work-subtitle {
+.work__subtitle {
     display: inline-block;
     padding: 27px 0;
     font-weight: 700;
@@ -671,8 +671,7 @@ ul {
     padding-bottom: 30px;
 }
 
-.team-title,
-.clients-title {
+.team-title {
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -752,15 +751,26 @@ ul {
 
 /* Клиенты */
 
-.clients {
+.clients__list {
     display: flex;
 }
 
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
     margin-right: 30px;
 }
 
-.clients-link {
+.clients__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-cl);
+}
+
+.clients__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -774,12 +784,12 @@ ul {
     transition: color var(--anim), border-color var(--anim);
 }
 
-.clients-icon {
+.clients__icon {
     fill: currentColor
 }
 
-.clients-link:hover,
-.clients-link:focus {
+.clients__link:hover,
+.clients__link:focus {
     border-color: var(--accent-cl);
     color: var(--accent-cl);
 }
